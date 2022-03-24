@@ -1,0 +1,25 @@
+/* 
+  Localizables.strings
+  ItunesSearch
+
+  Created by Berk Akkerman on 20.03.2022.
+  
+*/
+
+// MARK: - HOME
+"home_title" = "Itunes Search";
+"product_search_placeholder" = "Search";
+"product_search_empty" = "No results";
+
+// MARK: - PRODUCT
+"product_movie" = "Movie";
+"product_music" = "Music";
+"product_ebook" = "Ebook";
+"product_podcast" = "Podcast";
+"product_release_date" = "Release Date";
+"product_label_kind" = "Type:";
+"product_label_release_date" = "Release Date:";
+"product_label_collection" = "Collection:";
+"product_label_artist" = "Artist:";
+"product_label_navigate" = "More detail";
+

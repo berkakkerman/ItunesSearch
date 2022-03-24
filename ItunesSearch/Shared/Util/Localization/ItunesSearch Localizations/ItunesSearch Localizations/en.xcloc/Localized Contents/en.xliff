@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="ItunesSearch/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>ItunesSearch</source>
+        <target>ItunesSearch</target>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="ItunesSearch/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2.1" build-num="13C100"/>
+    </header>
+    <body>
+      <trans-unit id="Itunes Search" xml:space="preserve">
+        <source>Itunes Search</source>
+        <target>Itunes Search</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Not found any items" xml:space="preserve">
+        <source>Not found any items</source>
+        <target>Not found any items</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Release Date" xml:space="preserve">
+        <source>Release Date</source>
+        <target>Release Date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Search .." xml:space="preserve">
+        <source>Search ..</source>
+        <target>Search ..</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
