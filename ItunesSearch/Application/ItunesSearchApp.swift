@@ -17,10 +17,7 @@ struct ItunesSearchApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                let entity = ProductListEntity()
-                let interactor = ProductListInteractor(model: entity)
-                let presenter = ProductListPresenter(interactor: interactor)
-                ProductListView(presenter: presenter)
+                DIContainer.shared.resolve(type: ProductListView.self)!
             }
         }
     }

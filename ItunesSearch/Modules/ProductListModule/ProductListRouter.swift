@@ -10,9 +10,6 @@ import SwiftUI
 class ProductListRouter {
     
     func makeDetailView(for product: ItunesProduct) -> some View {
-        let entity = ProductDetailEntity(product: product)
-        let interactor = ProductDetailInteractor(model: entity)
-        let presenter = ProductDetailPresenter(interactor: interactor)
-        return ProductDetailView(presenter: presenter)
+        return DIContainer.shared.resolve(type: ProductDetailView.self, arguments: product)
     }
 }
