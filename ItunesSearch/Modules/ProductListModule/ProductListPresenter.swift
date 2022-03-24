@@ -11,7 +11,7 @@ import Combine
 class ProductListPresenter: ObservableObject {
     
     private let interactor: ProductListInteractor
-    private let router = ProductListRouter()
+    private let router: ProductListRouter
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -27,8 +27,9 @@ class ProductListPresenter: ObservableObject {
     
     private var currentPage = 0
     
-    init(interactor: ProductListInteractor) {
+    init(interactor: ProductListInteractor, router: ProductListRouter) {
         self.interactor = interactor
+        self.router = router
         
         interactor.$isLoadingPage
             .assign(to: \.isLoadingPage, on: self)

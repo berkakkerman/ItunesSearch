@@ -9,7 +9,7 @@ import Combine
 
 final class ProductListEntity: ObservableObject {
     
-    var provider: ItunesService
+    var provider: ItunesServiceProtocol
     
     @Published var result: ItunesResult = .init(resultCount: 0)
     @Published var pageCount: Int = 0
@@ -17,7 +17,7 @@ final class ProductListEntity: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
-    init(provider: ItunesService = ItunesService(networking: Networking(networkSession: NetworkSession()))) {
+    init(provider: ItunesServiceProtocol) {
         self.provider = provider
     }
     
