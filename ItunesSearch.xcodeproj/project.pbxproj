@@ -33,10 +33,10 @@
 		6049721727E7440600991E37 /* PriceTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6049721627E7440600991E37 /* PriceTagView.swift */; };
 		6049721927E7505500991E37 /* AVPlayer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6049721827E7505500991E37 /* AVPlayer+Ext.swift */; };
 		6049721B27E7518200991E37 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6049721A27E7518200991E37 /* PlayerView.swift */; };
-		605AE81E27E98CD8009BB3D9 /* DIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605AE81D27E98CD8009BB3D9 /* DIComponent.swift */; };
-		605AE82027E98CE8009BB3D9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605AE81F27E98CE8009BB3D9 /* DIContainer.swift */; };
-		605AE82227E98CF3009BB3D9 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605AE82127E98CF3009BB3D9 /* DIScope.swift */; };
-		605AE82427E98DE9009BB3D9 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605AE82327E98DE9009BB3D9 /* DI.swift */; };
+		605A552027EC9BC600B92D31 /* DIScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A551C27EC9BC600B92D31 /* DIScope.swift */; };
+		605A552127EC9BC600B92D31 /* DIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A551D27EC9BC600B92D31 /* DIComponent.swift */; };
+		605A552227EC9BC600B92D31 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A551E27EC9BC600B92D31 /* DIContainer.swift */; };
+		605A552327EC9BC600B92D31 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605A551F27EC9BC600B92D31 /* DI.swift */; };
 		606DC5F027EB918700FDB18C /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DC5EF27EB918700FDB18C /* Array+Ext.swift */; };
 		606DC5F227EBA06B00FDB18C /* ProductDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DC5F127EBA06B00FDB18C /* ProductDetailEntity.swift */; };
 		606DC5F427EBA22500FDB18C /* ProductDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606DC5F327EBA22500FDB18C /* ProductDetailRouter.swift */; };
@@ -113,10 +113,10 @@
 		6049721627E7440600991E37 /* PriceTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTagView.swift; sourceTree = "<group>"; };
 		6049721827E7505500991E37 /* AVPlayer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ext.swift"; sourceTree = "<group>"; };
 		6049721A27E7518200991E37 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		605AE81D27E98CD8009BB3D9 /* DIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIComponent.swift; sourceTree = "<group>"; };
-		605AE81F27E98CE8009BB3D9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		605AE82127E98CF3009BB3D9 /* DIScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIScope.swift; sourceTree = "<group>"; };
-		605AE82327E98DE9009BB3D9 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		605A551C27EC9BC600B92D31 /* DIScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIScope.swift; sourceTree = "<group>"; };
+		605A551D27EC9BC600B92D31 /* DIComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIComponent.swift; sourceTree = "<group>"; };
+		605A551E27EC9BC600B92D31 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		605A551F27EC9BC600B92D31 /* DI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		606DC5EF27EB918700FDB18C /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		606DC5F127EBA06B00FDB18C /* ProductDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailEntity.swift; sourceTree = "<group>"; };
 		606DC5F327EBA22500FDB18C /* ProductDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailRouter.swift; sourceTree = "<group>"; };
@@ -326,7 +326,7 @@
 		6007015627E4D4830036E3D9 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				605AE81C27E98CC7009BB3D9 /* DI */,
+				605A551B27EC9BB500B92D31 /* DI */,
 				609619EB27E77ED0008F27F6 /* Localization */,
 				609619F427E7878B008F27F6 /* Logger */,
 			);
@@ -351,13 +351,13 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		605AE81C27E98CC7009BB3D9 /* DI */ = {
+		605A551B27EC9BB500B92D31 /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				605AE82327E98DE9009BB3D9 /* DI.swift */,
-				605AE81D27E98CD8009BB3D9 /* DIComponent.swift */,
-				605AE81F27E98CE8009BB3D9 /* DIContainer.swift */,
-				605AE82127E98CF3009BB3D9 /* DIScope.swift */,
+				605A551F27EC9BC600B92D31 /* DI.swift */,
+				605A551D27EC9BC600B92D31 /* DIComponent.swift */,
+				605A551E27EC9BC600B92D31 /* DIContainer.swift */,
+				605A551C27EC9BC600B92D31 /* DIScope.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -439,6 +439,8 @@
 			dependencies = (
 			);
 			name = ItunesSearch;
+			packageProductDependencies = (
+			);
 			productName = ItunesSearch;
 			productReference = 600700FE27E4A15E0036E3D9 /* ItunesSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -511,6 +513,8 @@
 				Base,
 			);
 			mainGroup = 600700F527E4A15D0036E3D9;
+			packageReferences = (
+			);
 			productRefGroup = 600700FF27E4A15E0036E3D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -561,7 +565,6 @@
 				6007013327E4A6E70036E3D9 /* Constants.swift in Sources */,
 				606DC5F827EBA29200FDB18C /* ProductDetailPresenter.swift in Sources */,
 				6007010427E4A15E0036E3D9 /* ProductListView.swift in Sources */,
-				605AE81E27E98CD8009BB3D9 /* DIComponent.swift in Sources */,
 				60C3CE0C27EC6BFE00F3229C /* ProductGenreListView.swift in Sources */,
 				6007013027E4A42E0036E3D9 /* SearchBar.swift in Sources */,
 				60042E5727E8A35D00BC3584 /* LoadingView.swift in Sources */,
@@ -575,16 +578,16 @@
 				609619ED27E77EE2008F27F6 /* L10n.swift in Sources */,
 				603CF64127E7603C00570188 /* AudioPlayer.swift in Sources */,
 				609619FD27E79B1A008F27F6 /* NetworkingProtocol.swift in Sources */,
+				605A552127EC9BC600B92D31 /* DIComponent.swift in Sources */,
 				606DC5F627EBA26D00FDB18C /* ProductDetailInteractor.swift in Sources */,
 				606DC5F027EB918700FDB18C /* Array+Ext.swift in Sources */,
 				60EEE02427E735F300FEB122 /* ProductDetailView.swift in Sources */,
-				605AE82027E98CE8009BB3D9 /* DIContainer.swift in Sources */,
 				6007012D27E4A2450036E3D9 /* ItunesMediaKind.swift in Sources */,
 				60D1155F27EAE3720067EDDF /* ProductInformationView.swift in Sources */,
 				60961A0127E79BA2008F27F6 /* NetworkError.swift in Sources */,
 				6007014627E4B4960036E3D9 /* EndpointProtocol.swift in Sources */,
-				605AE82227E98CF3009BB3D9 /* DIScope.swift in Sources */,
 				609619F127E77F31008F27F6 /* LocalizationKey.swift in Sources */,
+				605A552227EC9BC600B92D31 /* DIContainer.swift in Sources */,
 				6049721927E7505500991E37 /* AVPlayer+Ext.swift in Sources */,
 				6007013A27E4AB1B0036E3D9 /* SegmentControl.swift in Sources */,
 				60961A0327E79CDD008F27F6 /* Encodable+Ext.swift in Sources */,
@@ -603,7 +606,8 @@
 				60D1156827EB02810067EDDF /* ProductListEntity.swift in Sources */,
 				60D1156A27EB0AE00067EDDF /* ProductListRouter.swift in Sources */,
 				6007015A27E4D8C40036E3D9 /* Decimal+Ext.swift in Sources */,
-				605AE82427E98DE9009BB3D9 /* DI.swift in Sources */,
+				605A552027EC9BC600B92D31 /* DIScope.swift in Sources */,
+				605A552327EC9BC600B92D31 /* DI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

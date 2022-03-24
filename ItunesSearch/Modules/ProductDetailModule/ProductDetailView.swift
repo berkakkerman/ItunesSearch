@@ -96,9 +96,6 @@ struct ProductDetailView: View {
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let entity = ProductDetailEntity(product: ItunesProduct.previewValue)
-        let interactor = ProductDetailInteractor(model: entity)
-        let presenter = ProductDetailPresenter(interactor: interactor)
-        return ProductDetailView(presenter: presenter)
+        return DIContainer.shared.resolve(type: ProductDetailView.self, arguments: ItunesProduct.previewValue)
     }
 }
